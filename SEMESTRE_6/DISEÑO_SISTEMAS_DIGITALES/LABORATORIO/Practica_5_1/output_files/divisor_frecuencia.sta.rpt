@@ -1,0 +1,571 @@
+TimeQuest Timing Analyzer report for divisor_frecuencia
+Fri Apr 26 20:23:58 2024
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'reloj'
+ 12. Hold: 'reloj'
+ 13. Minimum Pulse Width: 'reloj'
+ 14. Clock to Output Times
+ 15. Minimum Clock to Output Times
+ 16. Setup Transfers
+ 17. Hold Transfers
+ 18. Report TCCS
+ 19. Report RSKM
+ 20. Unconstrained Paths
+ 21. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name      ; divisor_frecuencia                                 ;
+; Device Family      ; MAX II                                             ;
+; Device Name        ; EPM240T100C5                                       ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Slow Model                                         ;
+; Rise/Fall Delays   ; Unavailable                                        ;
++--------------------+----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-12        ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                            ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets   ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; reloj      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { reloj } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+
+
++--------------------------------------------------+
+; Fmax Summary                                     ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 116.29 MHz ; 116.29 MHz      ; reloj      ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------+
+; Setup Summary                  ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; reloj ; -7.599 ; -171.072      ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Hold Summary                  ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; reloj ; 1.646 ; 0.000         ;
++-------+-------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++--------------------------------+
+; Minimum Pulse Width Summary    ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; reloj ; -2.289 ; -2.289        ;
++-------+--------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Setup: 'reloj'                                                                                             ;
++--------+--------------+--------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node    ; To Node      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------+--------------+--------------+-------------+--------------+------------+------------+
+; -7.599 ; contador[2]  ; contador[21] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 8.266      ;
+; -7.454 ; contador[2]  ; temporal     ; reloj        ; reloj       ; 1.000        ; 0.000      ; 8.121      ;
+; -7.297 ; contador[2]  ; contador[22] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.964      ;
+; -7.276 ; contador[2]  ; contador[20] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.943      ;
+; -7.171 ; contador[1]  ; contador[22] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.838      ;
+; -7.168 ; contador[2]  ; contador[19] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.835      ;
+; -7.162 ; contador[2]  ; contador[24] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.829      ;
+; -7.162 ; contador[3]  ; contador[21] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.829      ;
+; -7.162 ; contador[0]  ; contador[22] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.829      ;
+; -7.150 ; contador[1]  ; contador[20] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.817      ;
+; -7.141 ; contador[0]  ; contador[20] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.808      ;
+; -7.128 ; contador[2]  ; contador[16] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.795      ;
+; -7.119 ; contador[2]  ; contador[14] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.786      ;
+; -7.118 ; contador[2]  ; contador[18] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.785      ;
+; -7.088 ; contador[1]  ; contador[21] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.755      ;
+; -7.079 ; contador[0]  ; contador[21] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.746      ;
+; -7.076 ; contador[8]  ; contador[21] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.743      ;
+; -7.059 ; contador[2]  ; contador[7]  ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.726      ;
+; -7.053 ; contador[2]  ; contador[12] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.720      ;
+; -7.051 ; contador[2]  ; contador[11] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.718      ;
+; -7.050 ; contador[2]  ; contador[17] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.717      ;
+; -7.048 ; contador[2]  ; contador[6]  ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.715      ;
+; -7.042 ; contador[1]  ; contador[19] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.709      ;
+; -7.036 ; contador[1]  ; contador[24] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.703      ;
+; -7.033 ; contador[0]  ; contador[19] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.700      ;
+; -7.032 ; contador[2]  ; contador[10] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.699      ;
+; -7.027 ; contador[0]  ; contador[24] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.694      ;
+; -7.017 ; contador[3]  ; temporal     ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.684      ;
+; -6.957 ; contador[6]  ; contador[22] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.624      ;
+; -6.952 ; contador[2]  ; contador[13] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.619      ;
+; -6.943 ; contador[2]  ; contador[23] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.610      ;
+; -6.936 ; contador[6]  ; contador[20] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.603      ;
+; -6.933 ; contador[1]  ; contador[7]  ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.600      ;
+; -6.931 ; contador[8]  ; temporal     ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.598      ;
+; -6.924 ; contador[1]  ; contador[17] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.591      ;
+; -6.924 ; contador[0]  ; contador[7]  ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.591      ;
+; -6.915 ; contador[0]  ; contador[17] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.582      ;
+; -6.906 ; contador[1]  ; contador[10] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.573      ;
+; -6.900 ; contador[1]  ; contador[14] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.567      ;
+; -6.897 ; contador[0]  ; contador[10] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.564      ;
+; -6.894 ; contador[7]  ; contador[22] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.561      ;
+; -6.891 ; contador[0]  ; contador[14] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.558      ;
+; -6.874 ; contador[6]  ; contador[21] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.541      ;
+; -6.873 ; contador[7]  ; contador[20] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.540      ;
+; -6.828 ; contador[6]  ; contador[19] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.495      ;
+; -6.827 ; contador[1]  ; contador[18] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.494      ;
+; -6.826 ; contador[1]  ; contador[13] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.493      ;
+; -6.822 ; contador[6]  ; contador[24] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.489      ;
+; -6.818 ; contador[0]  ; contador[18] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.485      ;
+; -6.817 ; contador[1]  ; contador[23] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.484      ;
+; -6.817 ; contador[0]  ; contador[13] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.484      ;
+; -6.811 ; contador[7]  ; contador[21] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.478      ;
+; -6.808 ; contador[0]  ; contador[23] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.475      ;
+; -6.794 ; contador[1]  ; contador[16] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.461      ;
+; -6.785 ; contador[0]  ; contador[16] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.452      ;
+; -6.781 ; contador[12] ; contador[22] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.448      ;
+; -6.771 ; contador[9]  ; contador[22] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.438      ;
+; -6.765 ; contador[7]  ; contador[19] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.432      ;
+; -6.760 ; contador[12] ; contador[20] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.427      ;
+; -6.759 ; contador[7]  ; contador[24] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.426      ;
+; -6.750 ; contador[9]  ; contador[20] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.417      ;
+; -6.737 ; contador[15] ; contador[21] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.404      ;
+; -6.719 ; contador[6]  ; contador[7]  ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.386      ;
+; -6.710 ; contador[6]  ; contador[17] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.377      ;
+; -6.702 ; contador[1]  ; contador[12] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.369      ;
+; -6.698 ; contador[12] ; contador[21] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.365      ;
+; -6.695 ; contador[1]  ; contador[11] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.362      ;
+; -6.693 ; contador[3]  ; contador[24] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.360      ;
+; -6.693 ; contador[0]  ; contador[12] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.360      ;
+; -6.692 ; contador[6]  ; contador[10] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.359      ;
+; -6.691 ; contador[3]  ; contador[16] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.358      ;
+; -6.688 ; contador[3]  ; contador[20] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.355      ;
+; -6.688 ; contador[9]  ; contador[21] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.355      ;
+; -6.686 ; contador[6]  ; contador[14] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.353      ;
+; -6.686 ; contador[0]  ; contador[11] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.353      ;
+; -6.682 ; contador[3]  ; contador[14] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.349      ;
+; -6.681 ; contador[3]  ; contador[18] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.348      ;
+; -6.680 ; contador[3]  ; contador[22] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.347      ;
+; -6.678 ; contador[3]  ; contador[19] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.345      ;
+; -6.670 ; contador[10] ; contador[22] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.337      ;
+; -6.652 ; contador[12] ; contador[19] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.319      ;
+; -6.649 ; contador[10] ; contador[20] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.316      ;
+; -6.647 ; contador[7]  ; contador[17] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.314      ;
+; -6.646 ; contador[12] ; contador[24] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.313      ;
+; -6.642 ; contador[9]  ; contador[19] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.309      ;
+; -6.636 ; contador[9]  ; contador[24] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.303      ;
+; -6.623 ; contador[7]  ; contador[14] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.290      ;
+; -6.616 ; contador[3]  ; contador[12] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.283      ;
+; -6.614 ; contador[3]  ; contador[11] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.281      ;
+; -6.613 ; contador[6]  ; contador[18] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.280      ;
+; -6.612 ; contador[6]  ; contador[13] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.279      ;
+; -6.611 ; contador[3]  ; contador[6]  ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.278      ;
+; -6.607 ; contador[8]  ; contador[24] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.274      ;
+; -6.605 ; contador[8]  ; contador[16] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.272      ;
+; -6.603 ; contador[6]  ; contador[23] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.270      ;
+; -6.602 ; contador[8]  ; contador[20] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.269      ;
+; -6.596 ; contador[8]  ; contador[14] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.263      ;
+; -6.595 ; contador[8]  ; contador[18] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.262      ;
+; -6.594 ; contador[8]  ; contador[22] ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.261      ;
+; -6.592 ; contador[15] ; temporal     ; reloj        ; reloj       ; 1.000        ; 0.000      ; 7.259      ;
++--------+--------------+--------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Hold: 'reloj'                                                                                             ;
++-------+--------------+--------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node    ; To Node      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------+--------------+--------------+-------------+--------------+------------+------------+
+; 1.646 ; contador[1]  ; contador[13] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 1.867      ;
+; 2.211 ; temporal     ; temporal     ; reloj        ; reloj       ; 0.000        ; 0.000      ; 2.432      ;
+; 2.656 ; contador[10] ; contador[13] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 2.877      ;
+; 2.676 ; contador[1]  ; contador[6]  ; reloj        ; reloj       ; 0.000        ; 0.000      ; 2.897      ;
+; 2.679 ; contador[1]  ; contador[11] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 2.900      ;
+; 2.681 ; contador[1]  ; contador[12] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 2.902      ;
+; 2.743 ; contador[1]  ; contador[19] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 2.964      ;
+; 2.745 ; contador[1]  ; contador[22] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 2.966      ;
+; 2.746 ; contador[1]  ; contador[18] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 2.967      ;
+; 2.747 ; contador[1]  ; contador[14] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 2.968      ;
+; 2.753 ; contador[1]  ; contador[20] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 2.974      ;
+; 2.756 ; contador[1]  ; contador[16] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 2.977      ;
+; 2.758 ; contador[1]  ; contador[24] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 2.979      ;
+; 2.852 ; contador[3]  ; contador[3]  ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.073      ;
+; 2.875 ; contador[4]  ; contador[4]  ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.096      ;
+; 3.082 ; contador[1]  ; temporal     ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.303      ;
+; 3.109 ; contador[9]  ; contador[13] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.330      ;
+; 3.167 ; contador[13] ; contador[13] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.388      ;
+; 3.227 ; contador[1]  ; contador[21] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.448      ;
+; 3.665 ; contador[15] ; contador[15] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.886      ;
+; 3.670 ; contador[3]  ; contador[4]  ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.891      ;
+; 3.686 ; contador[8]  ; contador[8]  ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.907      ;
+; 3.686 ; contador[10] ; contador[6]  ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.907      ;
+; 3.689 ; contador[10] ; contador[11] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.910      ;
+; 3.691 ; contador[10] ; contador[12] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.912      ;
+; 3.709 ; contador[12] ; contador[13] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.930      ;
+; 3.753 ; contador[10] ; contador[19] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.974      ;
+; 3.755 ; contador[10] ; contador[22] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.976      ;
+; 3.756 ; contador[10] ; contador[18] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.977      ;
+; 3.757 ; contador[10] ; contador[14] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.978      ;
+; 3.758 ; contador[0]  ; contador[13] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.979      ;
+; 3.763 ; contador[10] ; contador[20] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.984      ;
+; 3.766 ; contador[10] ; contador[16] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.987      ;
+; 3.768 ; contador[10] ; contador[24] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 3.989      ;
+; 3.867 ; contador[5]  ; contador[5]  ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.088      ;
+; 3.883 ; contador[11] ; contador[13] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.104      ;
+; 4.038 ; contador[17] ; contador[13] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.259      ;
+; 4.092 ; contador[10] ; temporal     ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.313      ;
+; 4.139 ; contador[9]  ; contador[6]  ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.360      ;
+; 4.142 ; contador[9]  ; contador[11] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.363      ;
+; 4.144 ; contador[9]  ; contador[12] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.365      ;
+; 4.171 ; contador[18] ; contador[18] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.392      ;
+; 4.197 ; contador[13] ; contador[6]  ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.418      ;
+; 4.200 ; contador[13] ; contador[11] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.421      ;
+; 4.202 ; contador[13] ; contador[12] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.423      ;
+; 4.206 ; contador[9]  ; contador[19] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.427      ;
+; 4.208 ; contador[9]  ; contador[22] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.429      ;
+; 4.209 ; contador[9]  ; contador[18] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.430      ;
+; 4.210 ; contador[9]  ; contador[14] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.431      ;
+; 4.216 ; contador[9]  ; contador[20] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.437      ;
+; 4.219 ; contador[9]  ; contador[16] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.440      ;
+; 4.221 ; contador[9]  ; contador[24] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.442      ;
+; 4.237 ; contador[10] ; contador[21] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.458      ;
+; 4.264 ; contador[13] ; contador[19] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.485      ;
+; 4.266 ; contador[13] ; contador[22] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.487      ;
+; 4.267 ; contador[13] ; contador[18] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.488      ;
+; 4.268 ; contador[13] ; contador[14] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.489      ;
+; 4.274 ; contador[13] ; contador[20] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.495      ;
+; 4.277 ; contador[13] ; contador[16] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.498      ;
+; 4.279 ; contador[13] ; contador[24] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.500      ;
+; 4.383 ; contador[19] ; contador[19] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.604      ;
+; 4.390 ; contador[21] ; contador[13] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.611      ;
+; 4.392 ; contador[5]  ; contador[13] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.613      ;
+; 4.410 ; contador[17] ; contador[17] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.631      ;
+; 4.469 ; contador[20] ; contador[20] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.690      ;
+; 4.545 ; contador[9]  ; temporal     ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.766      ;
+; 4.548 ; contador[6]  ; contador[13] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.769      ;
+; 4.553 ; contador[16] ; contador[13] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.774      ;
+; 4.565 ; contador[7]  ; contador[13] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.786      ;
+; 4.572 ; contador[24] ; contador[24] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.793      ;
+; 4.583 ; contador[21] ; contador[21] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.804      ;
+; 4.603 ; contador[13] ; temporal     ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.824      ;
+; 4.671 ; contador[2]  ; contador[3]  ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.892      ;
+; 4.673 ; contador[22] ; contador[13] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.894      ;
+; 4.678 ; contador[22] ; contador[22] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.899      ;
+; 4.690 ; contador[9]  ; contador[21] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.911      ;
+; 4.695 ; contador[4]  ; contador[5]  ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.916      ;
+; 4.734 ; contador[18] ; contador[13] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.955      ;
+; 4.739 ; contador[12] ; contador[6]  ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.960      ;
+; 4.742 ; contador[12] ; contador[11] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.963      ;
+; 4.744 ; contador[12] ; contador[12] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.965      ;
+; 4.748 ; contador[13] ; contador[21] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 4.969      ;
+; 4.788 ; contador[0]  ; contador[6]  ; reloj        ; reloj       ; 0.000        ; 0.000      ; 5.009      ;
+; 4.791 ; contador[0]  ; contador[11] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 5.012      ;
+; 4.793 ; contador[2]  ; contador[4]  ; reloj        ; reloj       ; 0.000        ; 0.000      ; 5.014      ;
+; 4.793 ; contador[0]  ; contador[12] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 5.014      ;
+; 4.794 ; contador[3]  ; contador[5]  ; reloj        ; reloj       ; 0.000        ; 0.000      ; 5.015      ;
+; 4.806 ; contador[12] ; contador[19] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 5.027      ;
+; 4.808 ; contador[12] ; contador[22] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 5.029      ;
+; 4.809 ; contador[12] ; contador[18] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 5.030      ;
+; 4.810 ; contador[12] ; contador[14] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 5.031      ;
+; 4.816 ; contador[12] ; contador[20] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 5.037      ;
+; 4.819 ; contador[12] ; contador[16] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 5.040      ;
+; 4.821 ; contador[12] ; contador[24] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 5.042      ;
+; 4.855 ; contador[0]  ; contador[19] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 5.076      ;
+; 4.857 ; contador[0]  ; contador[22] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 5.078      ;
+; 4.858 ; contador[0]  ; contador[18] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 5.079      ;
+; 4.859 ; contador[0]  ; contador[14] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 5.080      ;
+; 4.865 ; contador[0]  ; contador[20] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 5.086      ;
+; 4.868 ; contador[0]  ; contador[16] ; reloj        ; reloj       ; 0.000        ; 0.000      ; 5.089      ;
++-------+--------------+--------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'reloj'                                                                      ;
++--------+--------------+----------------+------------------+-------+------------+------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target           ;
++--------+--------------+----------------+------------------+-------+------------+------------------+
+; -2.289 ; 1.000        ; 3.289          ; Port Rate        ; reloj ; Rise       ; reloj            ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[0]      ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[0]      ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[10]     ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[10]     ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[11]     ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[11]     ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[12]     ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[12]     ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[13]     ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[13]     ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[14]     ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[14]     ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[15]     ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[15]     ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[16]     ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[16]     ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[17]     ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[17]     ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[18]     ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[18]     ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[19]     ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[19]     ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[1]      ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[1]      ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[20]     ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[20]     ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[21]     ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[21]     ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[22]     ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[22]     ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[23]     ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[23]     ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[24]     ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[24]     ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[2]      ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[2]      ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[3]      ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[3]      ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[4]      ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[4]      ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[5]      ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[5]      ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[6]      ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[6]      ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[7]      ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[7]      ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[8]      ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[8]      ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; contador[9]      ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; contador[9]      ;
+; 0.234  ; 0.500        ; 0.266          ; High Pulse Width ; reloj ; Rise       ; temporal         ;
+; 0.234  ; 0.500        ; 0.266          ; Low Pulse Width  ; reloj ; Rise       ; temporal         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[0]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[0]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[10]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[10]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[11]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[11]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[12]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[12]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[13]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[13]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[14]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[14]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[15]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[15]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[16]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[16]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[17]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[17]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[18]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[18]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[19]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[19]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[1]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[1]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[20]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[20]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[21]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[21]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[22]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[22]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[23]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[23]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[24]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[24]|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[2]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[2]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[3]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[3]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[4]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[4]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[5]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[5]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[6]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[6]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[7]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; reloj ; Rise       ; contador[7]|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; reloj ; Rise       ; contador[8]|clk  ;
++--------+--------------+----------------+------------------+-------+------------+------------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; led       ; reloj      ; 6.820 ; 6.820 ; Rise       ; reloj           ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; led       ; reloj      ; 6.820 ; 6.820 ; Rise       ; reloj           ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; reloj      ; reloj    ; 886      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; reloj      ; reloj    ; 886      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 1     ; 1    ;
+; Unconstrained Input Port Paths  ; 26    ; 26   ;
+; Unconstrained Output Ports      ; 1     ; 1    ;
+; Unconstrained Output Port Paths ; 1     ; 1    ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Fri Apr 26 20:23:57 2024
+Info: Command: quartus_sta divisor_frecuencia -c divisor_frecuencia
+Info: qsta_default_script.tcl version: #1
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (306004): Started post-fitting delay annotation
+Info (306005): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'divisor_frecuencia.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name reloj reloj
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -7.599
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -7.599            -171.072 reloj 
+Info (332146): Worst-case hold slack is 1.646
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.646               0.000 reloj 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 reloj 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4598 megabytes
+    Info: Processing ended: Fri Apr 26 20:23:58 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

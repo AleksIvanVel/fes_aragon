@@ -1,0 +1,50 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity FLIPFLOPJK is
+	Port(
+		CLOCK : in STD_logic;
+			J	: in STD_logic;
+			K  : in std_logic;
+			Q  : out std_logic;
+			QN : out std_logic);
+end FLIPFLOPJK;
+
+architecture Behavioral of FLIPFLOPJK is
+
+	SIGNAL QT, QTN : STD_LOGIC;
+	
+begin
+	process (clock) begin
+			if (clock'event and clock = '1')then
+				if ((j = '1') and (k = '1')) then
+					Q <= '0';
+					QN <= '1';
+					QT <='1';
+					QTN <= '0';
+		
+				elsif((j = '0') and (k = '0' )) then 
+					Q <= '0';
+					QN <= '1';
+					QT <='0';
+					QTN <= '1';
+		
+				elsif((j = '0') and (k = '1' )) then 
+					Q <= '1';
+					QN <= '0';
+					QT <='0';
+					QTN <= '1';
+		
+				ELSif((j = '1') and (k = '0' )) then 
+					Q <= '1';
+					QN <= '0';
+					QT <='1';
+					QTN <= '0';
+		
+				end if;
+			end if;
+	end process;
+end Behavioral;
+

@@ -1,0 +1,15 @@
+|FLIPFLOPJK
+CLOCK => QN~reg0.CLK
+CLOCK => Q~reg0.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+QN <= QN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
