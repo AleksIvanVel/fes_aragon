@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">aplicacion_1</string>
     <string name="nombre">Escribe tu nombre:</string>
-    <string name="aceptar"></string>
+    <string name="ap_paterno">Escribe tu apellido paterno:</string>
+    <string name="ap_materno">Escribe tu apellido materno:</string>
+    <string name="aceptar" />
 </resources>
