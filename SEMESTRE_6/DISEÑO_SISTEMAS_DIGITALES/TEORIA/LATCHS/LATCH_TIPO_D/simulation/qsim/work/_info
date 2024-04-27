@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\PROYECTOS_ALTERA\TEORIA\LATCHS\LATCH_TIPO_D\simulation\qsim
+vLATCH_TIPO_D
+Z1 !s100 MnKNB`jK6N2YeQi_L2J8=0
+Z2 INL0WJNk2eHi0dnSKf1ezG2
+Z3 VHF3B;UfaR9TnLZ@B;KQAG2
+Z4 dD:\PROYECTOS_ALTERA\TEORIA\LATCHS\LATCH_TIPO_D\simulation\qsim
+Z5 w1709702156
+Z6 8LATCH_TIPO_D.vo
+Z7 FLATCH_TIPO_D.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|LATCH_TIPO_D.vo|
+Z10 o-work work -O0
+Z11 n@l@a@t@c@h_@t@i@p@o_@d
+!i10b 1
+!s85 0
+Z12 !s108 1709702158.377000
+Z13 !s107 LATCH_TIPO_D.vo|
+!s101 -O0
+vLATCH_TIPO_D_vlg_check_tst
+!i10b 1
+Z14 !s100 eAMREmK^Q^`3MMnY9T9=i2
+Z15 IJ<1@M_Hh?m_Bha<a2X@aK3
+Z16 V1`5OU:9zXQ<5MOb[_1gX`1
+R4
+Z17 w1709702155
+Z18 8LATCH_TIPO_D.vt
+Z19 FLATCH_TIPO_D.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z20 !s108 1709702158.500000
+Z21 !s107 LATCH_TIPO_D.vt|
+Z22 !s90 -work|work|LATCH_TIPO_D.vt|
+!s101 -O0
+R10
+Z23 n@l@a@t@c@h_@t@i@p@o_@d_vlg_check_tst
+vLATCH_TIPO_D_vlg_sample_tst
+!i10b 1
+Z24 !s100 D@^XZ>Y>c;mkBdT0dDnZ02
+Z25 IXNS10@8Z]G;4iJJSf=2>P1
+Z26 VgQWEGFHTcn7VM17=BDdA;1
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@l@a@t@c@h_@t@i@p@o_@d_vlg_sample_tst
+vLATCH_TIPO_D_vlg_vec_tst
+!i10b 1
+Z28 !s100 I9j0]2`0^inUGZ]zaI3fK1
+Z29 I6G098Ag@gB1PjhzBB9E2W1
+Z30 Vn32XC1;bcnU2oK75?@?OX3
+R4
+R17
+R18
+R19
+Z31 L0 181
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 n@l@a@t@c@h_@t@i@p@o_@d_vlg_vec_tst

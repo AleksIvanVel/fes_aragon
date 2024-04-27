@@ -1,0 +1,31 @@
+-- * --> proyeccion (representa todos los campos) 
+-- renglones --> seleccion, registros que se van a mostrar. estas se pueden llevar a cabo con una tabla 
+
+-- para mas de una tabla
+	* union
+	* interseccion
+	* join
+
+-- interseccion 
+	no es necesario el uso de llaves primarias 
+
+-- union 
+	suma, necesito dos consultas con el mismo numero de campos en la proyeccion
+
+-- producto cartesiano 
+	multiplicacion, multiplica todas las filas de tabla A por todos los renglones de B, a demas 	suma todos los campos de ambas tablas 
+
+-- join 
+	producto cartesiano mas la igualdad de la llave primaria y foranea 
+
+letf --> tabal principal, antes del operador 
+
+-- full outer join 
+	todo lo que esta en A mas todo lo que esta en B
+
+-- todo lo que NO esta en A y todo lo que no esta en B
+
+-- para el join no es necesario el constrain 
+
+	
+ 

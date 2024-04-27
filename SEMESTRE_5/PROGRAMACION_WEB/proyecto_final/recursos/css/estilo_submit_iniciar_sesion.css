@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+
+body{
+    background-color: rgb(125, 125, 125);
+}
+
+/* titulo */
+h1{
+    position:relative;
+    transform: skewY(-1deg);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 0.05em;
+    background-color:  #683880;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+h1::before{
+    display: flex;
+    content:"";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: #683880;
+    transform-origin: right;
+    transform: skewY(45deg);
+}
+
+h1::after{
+    content: "";
+    position: absolute;
+    top:-40px;
+    left: -20px;
+    width:100%;
+    height: 40px;
+    background: rgb(40, 203, 146);
+    transform: skewX(45deg);
+}
+
+
+/* formulario */
+
+form{
+    text-align: center;
+    background-color:   #3e3f46;
+    margin-left: 15%;
+    margin-right: 15%;
+    transform: skewY(-1deg);
+}
+
+form::before{
+    display: flex;
+    content:"";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: #2e3133;
+    transform-origin: right;
+    transform: skewY(45deg);
+}
+
+form::after{
+    content: "";
+    position: absolute;
+    top:-40px;
+    left: -20px;
+    width:100%;
+    height: 40px;
+    background: #2e3133;
+    transform: skewX(45deg);
+}
+
+.form-group{
+    font-family: Oswald;
+    color:  white;
+}
+
+input{
+    color: white;
+    background:  rgb(40, 203, 146);
+    transition: 0.5s;
+}
+
+input:hover{
+    background:  #683880;
+    transform: translateX(-5px)
+}
+
+.btn-primary{
+    color: white;
+    font-family: Oswald;
+    background-color: #2e3133;
+}
+
+/* regreso a menu principal */
+
+p{
+    text-align: center;
+    position: relative;
+    list-style: none;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 15px;
+    background: #3e3f46;
+    transform: skewY(-1deg);
+    z-index: calc(3 * var(--i));
+    transition: 0.5s;
+}
+
+ p::before{
+    display: flex;
+    content:"";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: #2e3133;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+
+p::after{
+    content: "";
+    position: absolute;
+    top:-40px;
+    left: -20px;
+    width:100%;
+    height: 40px;
+    background: #2e3133;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+
+p a{
+    color:  #999;
+    font-family: Oswald;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+p:hover{
+    background: #683880;
+    transform: translateX(-10px)
+}
+
+p:hover::after{
+    background: rgb(40, 203, 146);
+}
+
+p:hover::before{
+    background: #683880;
+}
+
+p:last-child::after{
+    box-shadow: -150px 150px 30px rgb(0, 0, 0);
+}

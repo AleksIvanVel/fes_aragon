@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, D:/PROYECTOS_ALTERA/TEORIA/LATCHS/LATCH_SR_EN/LATCH_SR_EN.bdf
+source_file = 1, D:/PROYECTOS_ALTERA/TEORIA/LATCHS/LATCH_SR_EN/LATCH_RS_EN.vwf
+source_file = 1, D:/PROYECTOS_ALTERA/TEORIA/LATCHS/LATCH_SR_EN/db/LATCH_SR_EN.cbx.xml
+design_name = LATCH_SR_EN
+instance = comp, \Q~output , Q~output, LATCH_SR_EN, 1
+instance = comp, \Qn~output , Qn~output, LATCH_SR_EN, 1
+instance = comp, \EN~input , EN~input, LATCH_SR_EN, 1
+instance = comp, \S~input , S~input, LATCH_SR_EN, 1
+instance = comp, \R~input , R~input, LATCH_SR_EN, 1
+instance = comp, \inst3~0 , inst3~0, LATCH_SR_EN, 1

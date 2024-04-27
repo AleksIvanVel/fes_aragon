@@ -1,0 +1,116 @@
+$comment
+	File created using the following command:
+		vcd file LATCH_TIPO_D.msim.vcd -direction
+$end
+$date
+	Tue Mar 05 23:15:59 2024
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module LATCH_TIPO_D_vlg_vec_tst $end
+$var reg 1 ! D $end
+$var reg 1 " En $end
+$var wire 1 # Q $end
+$var wire 1 $ Qn $end
+$var wire 1 % sampler $end
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var tri1 1 ) devclrn $end
+$var tri1 1 * devpor $end
+$var tri1 1 + devoe $end
+$var wire 1 , Q~output_o $end
+$var wire 1 - Qn~output_o $end
+$var wire 1 . D~input_o $end
+$var wire 1 / En~input_o $end
+$var wire 1 0 inst2~1_combout $end
+$var wire 1 1 inst3~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+x#
+x$
+x%
+0&
+1'
+x(
+1)
+1*
+1+
+x,
+x-
+0.
+0/
+x0
+x1
+$end
+#20000
+1!
+1.
+0%
+#40000
+0!
+0.
+1%
+#60000
+1!
+1.
+0%
+#80000
+1"
+0!
+1/
+0.
+1%
+10
+11
+0,
+1-
+0#
+1$
+#100000
+1!
+1.
+0%
+00
+1,
+1#
+01
+0-
+0$
+#120000
+0!
+0.
+1%
+10
+11
+0,
+1-
+0#
+1$
+#140000
+1!
+1.
+0%
+00
+1,
+1#
+01
+0-
+0$
+#160000
+0"
+0!
+0/
+0.
+1%
+#1000000

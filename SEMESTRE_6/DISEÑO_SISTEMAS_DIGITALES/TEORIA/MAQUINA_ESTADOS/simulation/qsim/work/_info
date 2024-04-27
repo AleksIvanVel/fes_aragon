@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\PROYECTOS_ALTERA\TEORIA\MAQUINA_ESTADOS\simulation\qsim
+vSM_CONTADOR
+Z1 I[_P^Uz6mJD6db5l4DEJ3>3
+Z2 VGdB5QohFA>IcML_oABCLE2
+Z3 dD:\PROYECTOS_ALTERA\TEORIA\MAQUINA_ESTADOS\simulation\qsim
+Z4 w1710344394
+Z5 8SM_CONTADOR.vo
+Z6 FSM_CONTADOR.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|SM_CONTADOR.vo|
+Z9 o-work work -O0
+Z10 n@s@m_@c@o@n@t@a@d@o@r
+!i10b 1
+Z11 !s100 :heGg41BgjZb8nlbB<ZhK2
+!s85 0
+Z12 !s108 1710344395.696000
+Z13 !s107 SM_CONTADOR.vo|
+!s101 -O0
+vSM_CONTADOR_vlg_check_tst
+!i10b 1
+!s100 Rz_2SMdLQTXOEJjkHOBdo1
+ICFiN4P^PXL3<z[Z[_Ymhe0
+Z14 VVBAiK@c7>MPTi6Pl2am3a1
+R3
+Z15 w1710344393
+Z16 8CONTADOR.vwf.vt
+Z17 FCONTADOR.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z18 !s108 1710344395.797000
+Z19 !s107 CONTADOR.vwf.vt|
+Z20 !s90 -work|work|CONTADOR.vwf.vt|
+!s101 -O0
+R9
+Z21 n@s@m_@c@o@n@t@a@d@o@r_vlg_check_tst
+vSM_CONTADOR_vlg_sample_tst
+!i10b 1
+!s100 :if>ho=8P[VIf[4S277cf2
+I7aaeAVTK^I<hnGBo80VSE3
+VOcEPP2;h976DjRTinSi5C1
+R3
+R15
+R16
+R17
+L0 29
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
+Z22 n@s@m_@c@o@n@t@a@d@o@r_vlg_sample_tst
+vSM_CONTADOR_vlg_vec_tst
+!i10b 1
+!s100 B=<9?65O8`bc[zzJ8@LF?0
+IM1dL^2gaIDL9^mcaN;`z@3
+Z23 VN_A1gd9fATYgA66F4;9CF1
+R3
+R15
+R16
+R17
+L0 210
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
+Z24 n@s@m_@c@o@n@t@a@d@o@r_vlg_vec_tst

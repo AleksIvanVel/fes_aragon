@@ -1,0 +1,44 @@
+body{
+    background-color: #383939;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5em;  /*1 em = 16px*/
+}
+
+/*Colores de fondo*/
+.fondoBlanco{
+    background-color: #fffedb;
+}
+
+.fondoVerde1{
+    background-color: #38c958;
+}
+
+.fondoVerde2{
+    background-color: #149c68;
+}
+
+/*texto de la pagina*/
+.texto1{
+    text-align: center;
+    font-size: 4em;
+    color: black;
+}
+
+.texto3, li, a{
+    color: black;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration:dashed;
+}
+
+.texto4{
+    color: black;
+    font-size: 1em;
+    text-align: justify;
+}
+
+.imagenLogo{
+    border: 10px solid #aee637;
+    border-radius:  25px;
+    width: 280px;
+}

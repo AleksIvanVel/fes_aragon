@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(130, 156, 130);
+    text-align: center;
+}
+button:hover{
+    background-color: rgb(29, 78, 200);
+}
+
+.ventana{
+    background-color: rgb(246, 246, 142); /*color de fondo de formulario*/
+    text-align: center;
+    border: 3px solid gray;/*borde: tamaño, tipo, color*/
+    box-shadow: 5px 5px 8px rgb(61, 61, 61);
+    width: 450px; /*ajustamos la ventana*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    padding-bottom: 10px;
+}
+
+.tamaño{
+    padding: 8px;
+    text-align: center;
+}

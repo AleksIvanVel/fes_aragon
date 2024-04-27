@@ -1,0 +1,19 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity Practica_2 is
+	port
+	(
+		A: in std_logic;
+		S: out std_logic
+	);
+end Practica_2;
+
+architecture rtl of Practica_2 is
+begin
+
+	S <= A;
+	
+end rtl;

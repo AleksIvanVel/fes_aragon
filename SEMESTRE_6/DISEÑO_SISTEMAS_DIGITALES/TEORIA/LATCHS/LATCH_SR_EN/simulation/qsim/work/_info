@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\PROYECTOS_ALTERA\TEORIA\LATCHS\LATCH_SR_EN\simulation\qsim
+vLATCH_SR_EN
+Z1 !s100 bUo<UHWgJcCIdIQIReQ8?2
+Z2 If_0mMS9RB=1;RkR3doiLm3
+Z3 V]W<8WIiNff5Nea9hQ:[SW2
+Z4 dD:\PROYECTOS_ALTERA\TEORIA\LATCHS\LATCH_SR_EN\simulation\qsim
+Z5 w1709826879
+Z6 8LATCH_SR_EN.vo
+Z7 FLATCH_SR_EN.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|LATCH_SR_EN.vo|
+Z10 o-work work -O0
+Z11 n@l@a@t@c@h_@s@r_@e@n
+!i10b 1
+!s85 0
+Z12 !s108 1709826880.387000
+Z13 !s107 LATCH_SR_EN.vo|
+!s101 -O0
+vLATCH_SR_EN_vlg_check_tst
+!i10b 1
+Z14 !s100 42L6R_^=nJQO8=0;bKacV1
+Z15 I73JYfYLEUhJ[Eo?BcAJCe2
+Z16 V?XkjKbnHhgElNKo=[aWQ73
+R4
+Z17 w1709826878
+Z18 8LATCH_SR_EN.vt
+Z19 FLATCH_SR_EN.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z20 !s108 1709826880.505000
+Z21 !s107 LATCH_SR_EN.vt|
+Z22 !s90 -work|work|LATCH_SR_EN.vt|
+!s101 -O0
+R10
+Z23 n@l@a@t@c@h_@s@r_@e@n_vlg_check_tst
+vLATCH_SR_EN_vlg_sample_tst
+!i10b 1
+Z24 !s100 MKNVc=iWE0?<d@zmJjB4m2
+Z25 IIn@9DzLjz;k:RK3nz;T6E3
+Z26 V2c2QM9dPiHb_S`gM3ME=@1
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@l@a@t@c@h_@s@r_@e@n_vlg_sample_tst
+vLATCH_SR_EN_vlg_vec_tst
+!i10b 1
+!s100 ]5kHN0LI0g3ne_CEz=>Z51
+Id@0`KJLFX6PbZ5<5H:3;c1
+Z28 V89FbQWAbQo2X<gdXZ@62j3
+R4
+R17
+R18
+R19
+Z29 L0 183
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@l@a@t@c@h_@s@r_@e@n_vlg_vec_tst

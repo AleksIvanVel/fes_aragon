@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, D:/PROYECTOS_ALTERA/TEORIA/LATCHS/LATCH_TIPO_NAND/LATCH_TIPO_NAND.bdf
+source_file = 1, D:/PROYECTOS_ALTERA/TEORIA/LATCHS/LATCH_TIPO_NAND/LATCH_TIPO_NAND.vwf
+source_file = 1, D:/PROYECTOS_ALTERA/TEORIA/LATCHS/LATCH_TIPO_NAND/db/LATCH_TIPO_NAND.cbx.xml
+design_name = LATCH_TIPO_NAND
+instance = comp, \Q~output , Q~output, LATCH_TIPO_NAND, 1
+instance = comp, \Qn~output , Qn~output, LATCH_TIPO_NAND, 1
+instance = comp, \Rn~input , Rn~input, LATCH_TIPO_NAND, 1
+instance = comp, \Sn~input , Sn~input, LATCH_TIPO_NAND, 1

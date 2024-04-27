@@ -1,0 +1,34 @@
+|SM_CONTADOR
+reset => reg_fstate.state1.OUTPUTSELECT
+reset => reg_fstate.state2.OUTPUTSELECT
+reset => reg_fstate.state3.OUTPUTSELECT
+reset => reg_fstate.state4.OUTPUTSELECT
+reset => reg_fstate.state8.OUTPUTSELECT
+reset => reg_fstate.state6.OUTPUTSELECT
+reset => reg_fstate.state7.OUTPUTSELECT
+reset => reg_fstate.state5.OUTPUTSELECT
+reset => output1.OUTPUTSELECT
+reset => output2.OUTPUTSELECT
+reset => output3.OUTPUTSELECT
+clock => fstate~1.DATAIN
+input1 => Selector0.IN4
+input1 => Selector7.IN1
+input1 => Selector5.IN1
+input1 => Selector3.IN1
+input1 => Selector6.IN1
+input1 => Selector2.IN1
+input1 => Selector4.IN2
+input1 => Selector0.IN1
+input1 => Selector1.IN1
+input1 => Selector5.IN3
+input1 => Selector6.IN3
+input1 => Selector7.IN3
+input1 => Selector1.IN3
+input1 => Selector2.IN3
+input1 => Selector3.IN3
+input1 => Selector4.IN3
+output1 <= output1.DB_MAX_OUTPUT_PORT_TYPE
+output2 <= output2.DB_MAX_OUTPUT_PORT_TYPE
+output3 <= output3.DB_MAX_OUTPUT_PORT_TYPE
+
+

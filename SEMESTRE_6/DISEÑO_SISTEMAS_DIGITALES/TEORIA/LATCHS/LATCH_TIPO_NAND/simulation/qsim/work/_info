@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\PROYECTOS_ALTERA\TEORIA\LATCHS\LATCH_TIPO_NAND\simulation\qsim
+vLATCH_TIPO_NAND
+Z1 !s100 [`BI5NAhOPl`R;`KB@nl@3
+Z2 Ib0FDfMAU7TG_cb90a]LN`1
+Z3 V[:8LXN5zcfOEK0cK`?5Bg2
+Z4 dD:\PROYECTOS_ALTERA\TEORIA\LATCHS\LATCH_TIPO_NAND\simulation\qsim
+Z5 w1709702498
+Z6 8LATCH_TIPO_NAND.vo
+Z7 FLATCH_TIPO_NAND.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|LATCH_TIPO_NAND.vo|
+Z10 o-work work -O0
+Z11 n@l@a@t@c@h_@t@i@p@o_@n@a@n@d
+!i10b 1
+!s85 0
+Z12 !s108 1709702499.652000
+Z13 !s107 LATCH_TIPO_NAND.vo|
+!s101 -O0
+vLATCH_TIPO_NAND_vlg_check_tst
+!i10b 1
+Z14 !s100 PQ0JJRbU?cz5;Mo>bWW3i1
+Z15 I?PEABUKY0@h_m5M9>@AHh3
+Z16 V6jkVBBTI[@gS8JE?J]PQi0
+R4
+Z17 w1709702497
+Z18 8LATCH_TIPO_NAND.vt
+Z19 FLATCH_TIPO_NAND.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z20 !s108 1709702499.784000
+Z21 !s107 LATCH_TIPO_NAND.vt|
+Z22 !s90 -work|work|LATCH_TIPO_NAND.vt|
+!s101 -O0
+R10
+Z23 n@l@a@t@c@h_@t@i@p@o_@n@a@n@d_vlg_check_tst
+vLATCH_TIPO_NAND_vlg_sample_tst
+!i10b 1
+Z24 !s100 8<]lQO9J_=9Ba5oT8AQ?41
+Z25 I5bZoDNI0nBQj>K>Rif=[60
+Z26 V;YNFkEHV6`LEYUL;EJOFX2
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@l@a@t@c@h_@t@i@p@o_@n@a@n@d_vlg_sample_tst
+vLATCH_TIPO_NAND_vlg_vec_tst
+!i10b 1
+Z28 !s100 Idaa99[=z3[M:;N<K>=@73
+Z29 IJcLolRZ[KdYRHB`5_l9z02
+Z30 V@9eGY4Y>CEBYQX>9TjK5h1
+R4
+R17
+R18
+R19
+Z31 L0 181
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 n@l@a@t@c@h_@t@i@p@o_@n@a@n@d_vlg_vec_tst

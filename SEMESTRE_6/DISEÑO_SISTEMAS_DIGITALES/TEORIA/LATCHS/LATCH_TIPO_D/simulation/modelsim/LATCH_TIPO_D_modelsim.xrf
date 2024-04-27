@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, D:/PROYECTOS_ALTERA/TEORIA/LATCHS/LATCH_TIPO_D/LATCH_TIPO_D.bdf
+source_file = 1, D:/PROYECTOS_ALTERA/TEORIA/LATCHS/LATCH_TIPO_D/LATCH_TIPO_D.vwf
+source_file = 1, D:/PROYECTOS_ALTERA/TEORIA/LATCHS/LATCH_TIPO_D/db/LATCH_TIPO_D.cbx.xml
+design_name = LATCH_TIPO_D
+instance = comp, \Q~output , Q~output, LATCH_TIPO_D, 1
+instance = comp, \Qn~output , Qn~output, LATCH_TIPO_D, 1
+instance = comp, \D~input , D~input, LATCH_TIPO_D, 1
+instance = comp, \En~input , En~input, LATCH_TIPO_D, 1
+instance = comp, \inst2~1 , inst2~1, LATCH_TIPO_D, 1
