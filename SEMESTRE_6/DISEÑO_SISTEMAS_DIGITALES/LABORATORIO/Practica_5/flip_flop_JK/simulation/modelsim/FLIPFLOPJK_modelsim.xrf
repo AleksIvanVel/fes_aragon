@@ -1,10 +1,10 @@
 vendor_name = ModelSim
 source_file = 1, C:/Users/makfi/OneDrive/Escritorio/fes_aragon/SEMESTRE_6/DISEÑO_SISTEMAS_DIGITALES/LABORATORIO/Practica_5/flip_flop_JK/FLIPFLOPJK.vhd
 source_file = 1, C:/Users/makfi/OneDrive/Escritorio/fes_aragon/SEMESTRE_6/DISEÑO_SISTEMAS_DIGITALES/LABORATORIO/Practica_5/flip_flop_JK/db/FLIPFLOPJK.cbx.xml
-source_file = 1, d:/altera/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
-source_file = 1, d:/altera/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
-source_file = 1, d:/altera/quartus/libraries/vhdl/ieee/timing_b.vhd
-source_file = 1, d:/altera/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, d:/quartus_ii/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, d:/quartus_ii/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, d:/quartus_ii/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, d:/quartus_ii/altera/13.1/quartus/libraries/vhdl/ieee/timing_p.vhd
 design_name = FLIPFLOPJK
 instance = comp, \CLOCK~I\, CLOCK, FLIPFLOPJK, 1
 instance = comp, \K~I\, K, FLIPFLOPJK, 1

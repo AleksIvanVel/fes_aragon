@@ -51,7 +51,7 @@ reset => contador[22].ACLR
 reset => contador[23].ACLR
 reset => contador[24].ACLR
 reset => temporal.ACLR
-led <= temporal.DB_MAX_OUTPUT_PORT_TYPE
-led2 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+led << temporal.DB_MAX_OUTPUT_PORT_TYPE
+led2 << temporal.DB_MAX_OUTPUT_PORT_TYPE
 
 

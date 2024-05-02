@@ -1,5 +1,5 @@
 EDA Netlist Writer report for divisor_frecuencia
-Fri Apr 26 20:24:01 2024
+Tue Apr 30 23:16:04 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Apr 26 20:24:01 2024 ;
+; EDA Netlist Writer Status ; Successful - Tue Apr 30 23:16:04 2024 ;
 ; Revision Name             ; divisor_frecuencia                    ;
 ; Top-level Entity Name     ; divisor_frecuencia                    ;
 ; Family                    ; MAX II                                ;
@@ -82,12 +82,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Apr 26 20:24:00 2024
-Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off divisor_frecuencia -c divisor_frecuencia
+    Info: Processing started: Tue Apr 30 23:16:03 2024
+Info: Command: quartus_eda --lower_priority --read_settings_files=off --write_settings_files=off divisor_frecuencia -c divisor_frecuencia
 Info (204018): Generated files "divisor_frecuencia.vho" and "divisor_frecuencia_vhd.sdo" in directory "C:/Users/makfi/OneDrive/Escritorio/fes_aragon/SEMESTRE_6/DISEÑO_SISTEMAS_DIGITALES/LABORATORIO/Practica_5_1/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4548 megabytes
-    Info: Processing ended: Fri Apr 26 20:24:01 2024
+    Info: Peak virtual memory: 4531 megabytes
+    Info: Processing ended: Tue Apr 30 23:16:04 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 

@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
--- DATE "04/26/2024 20:38:02"
+-- DATE "04/26/2024 22:55:10"
 
 -- 
 -- Device: Altera EPM240T100C5 Package TQFP100
@@ -36,8 +36,8 @@ ENTITY 	FLIPFLOPJK IS
 	CLOCK : IN std_logic;
 	J : IN std_logic;
 	K : IN std_logic;
-	Q : OUT std_logic;
-	QN : OUT std_logic
+	Q : BUFFER std_logic;
+	QN : BUFFER std_logic
 	);
 END FLIPFLOPJK;
 

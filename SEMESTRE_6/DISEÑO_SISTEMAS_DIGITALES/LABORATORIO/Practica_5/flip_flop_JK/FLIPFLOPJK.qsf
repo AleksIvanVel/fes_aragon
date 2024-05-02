@@ -50,3 +50,9 @@ set_global_assignment -name POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR 3.3V
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
 set_global_assignment -name VHDL_FILE FLIPFLOPJK.vhd
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_17 -to CLOCK
+set_location_assignment PIN_20 -to J
+set_location_assignment PIN_21 -to K
+set_location_assignment PIN_30 -to Q
+set_location_assignment PIN_33 -to QN

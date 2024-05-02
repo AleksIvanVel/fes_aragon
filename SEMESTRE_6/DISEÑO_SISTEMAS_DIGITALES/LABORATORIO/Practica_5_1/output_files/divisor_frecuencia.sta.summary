@@ -3,11 +3,11 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Setup 'reloj'
-Slack : -7.599
-TNS   : -171.072
+Slack : -7.051
+TNS   : -163.692
 
 Type  : Hold 'reloj'
-Slack : 1.646
+Slack : 1.898
 TNS   : 0.000
 
 Type  : Minimum Pulse Width 'reloj'

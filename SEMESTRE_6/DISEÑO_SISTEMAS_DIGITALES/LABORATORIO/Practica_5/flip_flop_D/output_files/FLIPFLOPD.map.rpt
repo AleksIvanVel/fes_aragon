@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FLIPFLOPD
-Fri Apr 26 20:46:11 2024
+Fri Apr 26 22:51:26 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                             ;
 +-----------------------------+--------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Fri Apr 26 20:46:11 2024      ;
+; Analysis & Synthesis Status ; Successful - Fri Apr 26 22:51:26 2024      ;
 ; Quartus II 64-Bit Version   ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name               ; FLIPFLOPD                                  ;
 ; Top-level Entity Name       ; FLIPFLOPD                                  ;
@@ -125,21 +125,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -216,9 +210,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Apr 26 20:46:10 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FLIPFLOPD -c FLIPFLOPD
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+    Info: Processing started: Fri Apr 26 22:51:26 2024
+Info: Command: quartus_map --lower_priority --read_settings_files=on --write_settings_files=off FLIPFLOPD -c FLIPFLOPD
 Info (12021): Found 2 design units, including 1 entities, in source file flipflopd.vhd
     Info (12022): Found design unit 1: FLIPFLOPD-Behavioral
     Info (12023): Found entity 1: FLIPFLOPD
@@ -228,9 +221,9 @@ Info (21057): Implemented 6 device resources after synthesis - the final resourc
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 2 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4652 megabytes
-    Info: Processing ended: Fri Apr 26 20:46:11 2024
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4648 megabytes
+    Info: Processing ended: Fri Apr 26 22:51:26 2024
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
 
 
