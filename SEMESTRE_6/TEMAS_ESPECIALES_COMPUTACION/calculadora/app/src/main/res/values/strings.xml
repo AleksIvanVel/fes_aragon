@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Conversor</string>
     <string name="dolar">Dolar:</string>
+    <string name="peso">Pesos:</string>
+    <string name="dolar2pesos">Convertir dolar en pesos</string>
+    <string name="pesos2dolar">Converir pesos a dolares</string>
+    <string name="valorInvalido">¡Valor introducido inválido!</string>
+
 </resources>
