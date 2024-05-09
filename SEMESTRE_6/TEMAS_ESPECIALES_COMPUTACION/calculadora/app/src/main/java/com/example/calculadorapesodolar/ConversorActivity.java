@@ -10,9 +10,14 @@ import androidx.core.view.WindowInsetsCompat;
 import android.widget.EditText;
 import android.widget.Button;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.Button;
+import android.view.View;
 
 public class ConversorActivity extends AppCompatActivity {
 
+    private EditText campoDolar;
+    private EditText campoPesos;
     private EditText campoDolar;
     private EditText campoPesos;
     @Override
