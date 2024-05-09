@@ -44,7 +44,7 @@ public class ConversorActivity extends AppCompatActivity {
         pesosADolar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 try{
-                    campoPesos.setText(""+Double.parseDouble(campoPesos.getText().toString())*19.92);
+                    campoPesos.setText(""+Double.parseDouble(campoPesos.getText().toString())*0.05);
                 }catch (Exception e){
                     campoPesos.setText(getResources().getString(R.string.valorInvalido));
                 }
