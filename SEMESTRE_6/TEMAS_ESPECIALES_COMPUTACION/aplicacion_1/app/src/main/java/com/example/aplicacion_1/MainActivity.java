@@ -1,5 +1,6 @@
 package com.example.aplicacion_1;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText txtNombre;
     private Button btnAceptar;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,14 +28,15 @@ public class MainActivity extends AppCompatActivity {
         btnAceptar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            //Creamos el Intent
+                //Creamos el Intent
                 Intent intent = new Intent(MainActivity.this, SaludoActivity.class);
 
-            //Creamos la información a pasar entre actividades
+                //Creamos la información a pasar entre actividades
                 Bundle b = new Bundle();
                 b.putString("NOMBRE", txtNombre.getText().toString());
 
-            //Añadimos la información al intent
+
+                //Añadimos la información al intent
                 intent.putExtras(b);
 
                 //Iniciamos la nueva actividad
