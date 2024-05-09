@@ -24,6 +24,6 @@ public class SaludoActivity extends AppCompatActivity{
 
         //Construimos el mensaje a mostrar
         assert bundle != null;
-        saludo.setText("Hola " + bundle.getString("NOMBRE"));
+        saludo.setText("Hola " + bundle.getString("NOMBRE") + bundle.getString("AP_PATERNO") + bundle.getString("AP_MATERNO") );
     }
 }

@@ -20,6 +20,34 @@
         android:inputType="text"
         android:visibility="visible" />
 
+    <TextView
+        android:id="@+id/lblApPaterno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ap_paterno"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/txtApPaterno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/lblApMaterno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ap_materno"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/txtApMaterno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:visibility="visible" />
+
     <Button
         android:id="@+id/btnAceptar"
         android:layout_width="wrap_content"

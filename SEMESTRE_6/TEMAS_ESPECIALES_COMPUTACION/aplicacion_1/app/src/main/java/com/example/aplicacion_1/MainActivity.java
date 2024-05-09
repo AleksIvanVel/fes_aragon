@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     private EditText txtNombre;
+    private EditText txtApPaterno;
+    private EditText txtApMaterno;
     private Button btnAceptar;
 
     @SuppressLint("MissingInflatedId")
@@ -22,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
         //Obtenemos una referencia a los controles de la interfaz
         txtNombre = (EditText) findViewById(R.id.txtNombre);
+        txtApPaterno = (EditText) findViewById(R.id.txtApPaterno);
+        txtApMaterno = (EditText) findViewById(R.id.txtApMaterno);
         btnAceptar = (Button) findViewById(R.id.btnAceptar);
 
         //Implementamos el evento click del botón
@@ -34,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
                 //Creamos la información a pasar entre actividades
                 Bundle b = new Bundle();
                 b.putString("NOMBRE", txtNombre.getText().toString());
+                b.putString("AP_PATERNO", txtApPaterno.getText().toString());
+                b.putString("AP_MATERNO", txtApMaterno.getText().toString());
 
 
                 //Añadimos la información al intent
