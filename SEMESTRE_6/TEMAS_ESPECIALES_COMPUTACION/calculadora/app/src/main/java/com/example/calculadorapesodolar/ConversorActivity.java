@@ -10,9 +10,14 @@ import androidx.core.view.WindowInsetsCompat;
 import android.widget.EditText;
 import android.widget.Button;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.Button;
+import android.view.View;
 
 public class ConversorActivity extends AppCompatActivity {
 
+    private EditText campoDolar;
+    private EditText campoPesos;
     private EditText campoDolar;
     private EditText campoPesos;
     @Override
@@ -44,7 +49,7 @@ public class ConversorActivity extends AppCompatActivity {
         pesosADolar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 try{
-                    campoPesos.setText(""+Double.parseDouble(campoPesos.getText().toString())*0.05);
+                    campoPesos.setText(""+Double.parseDouble(campoPesos.getText().toString())*19.92);
                 }catch (Exception e){
                     campoPesos.setText(getResources().getString(R.string.valorInvalido));
                 }
