@@ -9,19 +9,20 @@
 
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="386dp"
+        android:layout_height="724dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="3dp">
 
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="31dp"
-            android:text="Ingrese el Monto de Compra" />
+            android:text="Ingrese el Monto de Compra"
+            android:textSize="25sp" />/>
 
         <EditText
             android:id="@+id/montoCompra"
@@ -32,39 +33,67 @@
 
         <Button
             android:id="@+id/calc_descuento"
-            android:layout_width="170dp"
+            android:layout_width="227dp"
             android:layout_height="wrap_content"
+            android:onClick="calcular_descuento"
             android:text="Calular Descuento"
-            android:onClick="calcular_descuento"/>
+            android:textSize="18sp" />/>
 
         <TextView
             android:id="@+id/montoC"
             android:layout_width="match_parent"
             android:layout_height="31dp"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textSize="18sp" />/>
 
         <TextView
             android:id="@+id/descuento"
             android:layout_width="match_parent"
             android:layout_height="31dp"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textSize="18sp" />/>
 
         <TextView
             android:id="@+id/costoNeto"
             android:layout_width="match_parent"
             android:layout_height="31dp"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textSize="18sp" />/>
 
         <TextView
             android:id="@+id/impuesto"
             android:layout_width="match_parent"
             android:layout_height="31dp"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textSize="18sp" />/>
 
         <TextView
             android:id="@+id/importeNeto"
             android:layout_width="match_parent"
             android:layout_height="31dp"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textSize="18sp" />/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:text="Guardar Resultados"
+                android:textSize="18sp" />/>
+
+            <Button
+                android:id="@+id/btnLoad"
+                android:layout_width="167dp"
+                android:layout_height="71dp"
+                android:text="Cargar Resultados"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
